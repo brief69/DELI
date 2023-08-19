@@ -41,7 +41,7 @@ class SendPageState extends State<SendPage> {
 
         // 自分のQRコード
         QrImage(
-          data: "YOUR_PUBLIC_KEY", 
+          data: "PUBLIC_KEY", 
           version: QrVersions.auto,
           size: 200.0,
         ),
