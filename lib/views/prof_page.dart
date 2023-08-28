@@ -1,12 +1,12 @@
 // /Users/ir/Desktop/deli_app/deli_app/lib/views/prof_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:deli_app/views/profHistoryTabPages/h_send_tab.dart';
-import 'package:deli_app/views/profHistoryTabPages/h_gene_tab.dart';
-import 'package:deli_app/views/profHistoryTabPages/h_rece_tab.dart';
-import 'package:deli_app/views/profWalletTabPages/w_bran_tab.dart';
-import 'package:deli_app/views/profWalletTabPages/w_gene_tab.dart';
-import 'package:deli_app/views/profWalletTabPages/w_hist_tab.dart';
+import 'package:deli_app/views/historyTabPages/h_send_tab.dart';
+import 'package:deli_app/views/historyTabPages/h_gene_tab.dart';
+import 'package:deli_app/views/historyTabPages/h_rece_tab.dart';
+import 'package:deli_app/views/walletTabPages/w_bran_tab.dart';
+import 'package:deli_app/views/walletTabPages/w_gene_tab.dart';
+import 'package:deli_app/views/walletTabPages/w_hist_tab.dart';
 
 // TODO: ユーザー名と公開キーの表示を実装
 // TODO: 

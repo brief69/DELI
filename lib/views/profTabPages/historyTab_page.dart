@@ -1,5 +1,5 @@
-// 
-// 
+
+// /Users/ir/Desktop/deli_app/deli_app/lib/views/profTabPages/historyTab_page.dart
 
 import 'package:flutter/material.dart';
 
@@ -44,4 +44,13 @@ class HistoryTabViewState extends State<HistoryTabView> with SingleTickerProvide
       ],
     );
   }
+}
+
+class GeneTab { // TODO #3:listviewのページのコードを書く。正確には他のファイルに書く
+}
+
+class ReceTab { // TODO: #2 listviewのページのコードを書く。正確には他のファイルに書く
+}
+
+class SendTab { // TODO: #4 listviewのページのコードを書く。正確には他のファイルに書く
 }
