@@ -44,3 +44,9 @@ class WalletTabViewState extends State<WalletTabView> with SingleTickerProviderS
     );
   }
 }
+
+class GeneTab {
+}
+
+class BranTab {
+}
