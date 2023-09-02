@@ -23,7 +23,7 @@ class ProfPageState extends State<ProfPage> with SingleTickerProviderStateMixin 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 0, 0, 30),
         title: null,
         leading: InkWell(
           onTap: () {
