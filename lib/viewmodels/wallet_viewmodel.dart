@@ -1,6 +1,6 @@
 
 
-import '../services/wallet_service.dart';
+import '../models/wallet_service.dart';
 
 class WalletViewModel {
   final walletService = WalletService();

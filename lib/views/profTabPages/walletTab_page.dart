@@ -1,6 +1,10 @@
-// 
+// /Users/ir/Desktop/deli_app/deli_app/lib/views/profTabPages/walletTab_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:deli_app/views/walletTabPages/w_bran_tab.dart';
+import 'package:deli_app/views/walletTabPages/w_gene_tab.dart';
+import 'package:deli_app/views/walletTabPages/w_hist_tab.dart';
+
 
 class WalletTabView extends StatefulWidget {
   const WalletTabView({Key? key}) : super(key: key);
@@ -33,10 +37,10 @@ class WalletTabViewState extends State<WalletTabView> with SingleTickerProviderS
         Expanded(
           child: TabBarView(
             controller: _controller,
-            children: [
-              BranTab(),   // Assuming BranTab is the main widget in w_bran_tab.dart
-              GeneTab(),   // Assuming GeneTab is the main widget in w_gene_tab.dart
-              HistTab(),   // Assuming HistTab is the main widget in w_hist_tab.dart
+            children: const [
+              BranTab(),
+              GeneTab(),
+              HistTab(),
             ],
           ),
         )
@@ -45,8 +49,3 @@ class WalletTabViewState extends State<WalletTabView> with SingleTickerProviderS
   }
 }
 
-class GeneTab {
-}
-
-class BranTab {
-}

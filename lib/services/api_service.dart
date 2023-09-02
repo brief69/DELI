@@ -8,7 +8,7 @@ class ApiService {
   final String apiKey = 'YOUR_WHAT3WORDS_API_KEY';
 
   Future<String> getWordsFromLocation(double lat, double lon) async {
-    final response = await http.get('https://api.what3words.com/v3/convert-to-3wa?coordinates=$lat,$lon&key=$apiKey');
+    final response = await http.get('https://api.what3words.com/v3/convert-to-3wa?coordinates=$lat,$lon&key=$apiKey' as Uri);
     if (response.statusCode == 200) {
       // JSONデータを解析し、単語を返す。
       return 'example.word.word'; // 実際の構文解析に置き換える。
