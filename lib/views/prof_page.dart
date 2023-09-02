@@ -1,8 +1,8 @@
 // /Users/ir/Desktop/deli_app/deli_app/lib/views/prof_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:deli_app/views/profTabPages/walletTab_page.dart';
-import 'package:deli_app/views/profTabPages/historyTab_page.dart';
+import 'package:deli_app/views/walletTab_page.dart';
+import 'package:deli_app/views/historyTab_page.dart';
 
 
 

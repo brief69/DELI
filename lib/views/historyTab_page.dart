@@ -2,9 +2,9 @@
 // /Users/ir/Desktop/deli_app/deli_app/lib/views/profTabPages/historyTab_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:deli_app/views/historyTabPages/h_send_tab.dart';
-import 'package:deli_app/views/historyTabPages/h_rece_tab.dart';
-import 'package:deli_app/views/historyTabPages/h_gene_tab.dart';
+import 'package:deli_app/views/h_send_tab.dart';
+import 'package:deli_app/views/h_rece_tab.dart';
+import 'package:deli_app/views/h_gene_tab.dart';
 
 
 class HistoryTabView extends StatefulWidget {

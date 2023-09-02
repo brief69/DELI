@@ -1,9 +1,9 @@
 // /Users/ir/Desktop/deli_app/deli_app/lib/views/profTabPages/walletTab_page.dart
 
 import 'package:flutter/material.dart';
-import 'package:deli_app/views/walletTabPages/w_bran_tab.dart';
-import 'package:deli_app/views/walletTabPages/w_gene_tab.dart';
-import 'package:deli_app/views/walletTabPages/w_hist_tab.dart';
+import 'package:deli_app/views/w_bran_tab.dart';
+import 'package:deli_app/views/w_gene_tab.dart';
+import 'package:deli_app/views/w_hist_tab.dart';
 
 
 class WalletTabView extends StatefulWidget {
