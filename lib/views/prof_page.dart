@@ -1,15 +1,10 @@
 // /Users/ir/Desktop/deli_app/deli_app/lib/views/prof_page.dart
-
 import 'package:flutter/material.dart';
 import 'package:deli_app/views/walletTab_page.dart';
 import 'package:deli_app/views/historyTab_page.dart';
 
-
-
-// TODO: ユーザー名と公開キーの表示を実装
-
 class ProfPage extends StatefulWidget {
-  const ProfPage({Key? key}) : super(key: key); // Fixed the key initialization
+  const ProfPage({Key? key}) : super(key: key);
 
   @override
   ProfPageState createState() => ProfPageState();
@@ -17,8 +12,6 @@ class ProfPage extends StatefulWidget {
 
 class ProfPageState extends State<ProfPage> with SingleTickerProviderStateMixin {
   late TabController _controller;
-  
-  get bottom => null;
 
   @override
   void initState() {
@@ -30,7 +23,40 @@ class ProfPageState extends State<ProfPage> with SingleTickerProviderStateMixin 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('User Public Key Here'),
+        backgroundColor: Colors.blue,
+        title: null,
+        leading: InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, '/publicKeyQRPage');
+          },
+          child: const Center(
+            child: Text(
+              'Public Key',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+        centerTitle: true,
+        title: InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, '/editProfilePage');
+          },
+          child: const Text(
+            'Username',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(
+              Icons.settings,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              Navigator.pushNamed(context, '/settingsPage');
+            },
+          )
+        ],
         bottom: TabBar(
           controller: _controller,
           tabs: const [

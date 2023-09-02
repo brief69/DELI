@@ -26,7 +26,7 @@ class WalletPageState extends State<WalletPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Wallet Page")),// TODO: #1 appbarではなく、tabbarにするproftabviewの中に入れる
+      appBar: AppBar(title: const Text("Wallet Page")),
       body: Consumer<WalletViewModel>(
         builder: (context, viewModel, child) {
           return Center(
