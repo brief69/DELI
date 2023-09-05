@@ -6,7 +6,7 @@ class SettingsModel {
   bool notificationsEnabled;
   bool privacyEnabled;
   bool securityEnabled;
-  bool accountOpen = false;  // _（アンダースコア）で始まる名前はプライベートです
+  bool accountOpen = false;
 
   SettingsModel({
     this.notificationsEnabled = false,

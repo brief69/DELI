@@ -3,14 +3,9 @@
 import 'package:deli_app/views/rules_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:pub_op/views/login_page.dart';
-import 'package:pub_op/views/edit_address_page.dart';
-import 'package:pub_op/views/edit_affiliation_page.dart';
-import 'package:pub_op/views/edit_email_page.dart';
-import 'package:pub_op/views/rules_page.dart';
-import 'package:pub_op/views/sms_verification_page.dart';
-import '../viewmodels/contact_viewmodel.dart';
 import '../viewmodels/settings_viewmodel.dart';
+import 'contact_support_page.dart';
+import 'login_page.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -31,24 +26,15 @@ class SettingsPage extends StatelessWidget {
               children: [
                 ListTile(
                   title: const Text('DELI Rules', style: TextStyle(color: Colors.black)),
-                  onTap: () => const RulesPage(),
+                  onTap: () {
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => const RulesPage()));
+                  }
                 ),
                 ListTile(
-                  title: const Text('Email', style: TextStyle(color: Colors.black)),
-                  onTap: () => const EditEmailPage(),
-                ),
-                ListTile(
-                  title: const Text('Bank Accaunt', style: TextStyle(color: Colors.black)),
-                  onTap: () => {},
-                ),
-                SwitchListTile(
-                  title: const Text('Account Closed'),
-                  value: viewModel.settings.accountOpen,
-                  onChanged: (value) {
-                    viewModel.toggleAccountOpen(value);
+                  title: const Text('Contacts'),
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ContactPage()));
                   },
-                  inactiveTrackColor: const Color.fromARGB(108, 84, 74, 70), // off状態がopenなので灰色を示す
-                  activeColor: const Color.fromARGB(255, 0, 255, 8), // on状態がclosedなので緑色を示す
                 ),
                 ListTile(
                   title: const Text('Development'),
@@ -62,11 +48,11 @@ class SettingsPage extends StatelessWidget {
                   },
                 ),
                 ElevatedButton(
-                  child: const Text('Log Out', style: TextStyle(color: Colors.black)),
+                  child: const Text('Logout', style: TextStyle(color: Colors.black)),
                   onPressed: () async {
                     bool success = await viewModel.logoutPage();
                     if (success) {
-                      Navigator.pushReplacementNamed(context, LoginPage()),
+                      Navigator.pushReplacementNamed(context, const LoginPage() as String);
                     } else {
                       // エラーハンドリングをここに書く
                     }
