@@ -4,7 +4,7 @@ import 'package:deli_app/views/rules_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../viewmodels/settings_viewmodel.dart';
-import 'contact_support_page.dart';
+import 'settingspage/contact_support_page.dart';
 import 'login_page.dart';
 
 class SettingsPage extends StatelessWidget {
