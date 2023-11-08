@@ -1,6 +1,7 @@
 # ddd(Decentralized Delivery Dimen)
 
-DELI
+DELI_app
+Delivery dimension
 
 ## Overview
 
